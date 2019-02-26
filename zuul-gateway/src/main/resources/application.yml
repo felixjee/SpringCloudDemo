@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-zuul
+eureka:
+  instance:
+    instance-id: zuul:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+info:
+  name: ${project.name}
+  company: www.jieepre.com
+  artifactId: ${project.artifactId}
+  version: ${project.version}
+
+#路由访问映射规则
+zuul:
+  routes:
+    zuul.serviceId: user-service
+    zuul.path: /zuul-user-service/**
+  ignored-services: "*" #忽略原真实服务名
+  prefix: /felix #设置统一公共前缀
+
+

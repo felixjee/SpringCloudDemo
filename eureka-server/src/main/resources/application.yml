@@ -1,0 +1,20 @@
+server:
+  port: 8761
+
+
+spring:
+  application:
+    name: eureka-server
+
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: EUREKASERVER-8761 #自定义注册服务中心的名称
+    prefer-ip-address: true #访问路径科可显示ip地址
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+

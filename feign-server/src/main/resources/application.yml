@@ -1,0 +1,24 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: feign-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: feign-server:8765
+    prefer-ip-address: true
+
+info:
+  name: ${project.name}
+  company: www.jieepre.com
+  artifactId: ${project.artifactId}
+  version: ${project.version}$
+
+#开启熔断
+feign:
+  hystrix:
+    enabled: true

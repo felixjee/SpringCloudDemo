@@ -1,0 +1,6 @@
+E:\project\SpringCloudUser\feign-server\src\main\java\com\felix\project\controller\UserController.java
+E:\project\SpringCloudUser\feign-server\src\main\java\com\felix\project\config\FeignConfig.java
+E:\project\SpringCloudUser\feign-server\src\main\java\com\felix\project\fallback\EurekaClientFeignHystric.java
+E:\project\SpringCloudUser\feign-server\src\main\java\com\felix\project\client\EurekaClientFeign.java
+E:\project\SpringCloudUser\feign-server\src\main\java\com\felix\project\service\UserService.java
+E:\project\SpringCloudUser\feign-server\src\main\java\com\felix\project\FeignServerApplication.java

@@ -1,0 +1,5 @@
+com\felix\project\fallback\EurekaClientFeignHystric.class
+com\felix\project\client\EurekaClientFeign.class
+com\felix\project\controller\UserController.class
+com\felix\project\service\UserService.class
+com\felix\project\config\FeignConfig.class

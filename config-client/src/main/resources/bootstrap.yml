@@ -1,0 +1,25 @@
+server:
+  port: 8881
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+      #单个配置
+     # uri: http://localhost:8888/
+      #集群配置高可用
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+
+
