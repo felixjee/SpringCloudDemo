@@ -19,9 +19,11 @@ info:
 #路由访问映射规则
 zuul:
   routes:
-    zuul.serviceId: user-service
+    zuul.serviceId: feign-server
     zuul.path: /zuul-user-service/**
   ignored-services: "*" #忽略原真实服务名
   prefix: /felix #设置统一公共前缀
-
-
+  host:
+    connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 60000   #socket超时
+  retryable: true #重试

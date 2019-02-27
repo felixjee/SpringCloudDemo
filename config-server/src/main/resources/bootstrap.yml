@@ -1,5 +1,5 @@
 server:
-  port: 8889
+  port: 8899
 
 spring:
   application:
@@ -13,6 +13,11 @@ spring:
           username:
           default-label: master
           search-paths:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   instance:
     prefer-ip-address: true
@@ -21,3 +26,12 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+#关闭安全认证
+management:
+  security:
+    enabled: false
+  #refresh接入点显式暴露出来
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh

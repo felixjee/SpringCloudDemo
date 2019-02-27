@@ -13,6 +13,7 @@
         <module name="eureka-server" />
         <module name="feign-server" />
         <module name="hystrix-monitoring" />
+        <module name="SpringCloudConfig" />
         <module name="turbine-monitoring" />
         <module name="user-service" />
         <module name="zuul-gateway" />
@@ -21,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringCloudConfig" options="-parameters" />
       <module name="admin-monitoring" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="config-client" options="-parameters" />

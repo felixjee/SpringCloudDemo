@@ -1,6 +1,0 @@
-com\felix\project\config\MybatisPlusConfig.class
-com\felix\project\model\User.class
-com\felix\project\UserServiceApplication.class
-com\felix\project\mapper\UserMapper.class
-com\felix\project\controller\UserController.class
-com\felix\project\service\UserService.class

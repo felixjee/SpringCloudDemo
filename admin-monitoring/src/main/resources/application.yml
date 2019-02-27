@@ -11,7 +11,7 @@ spring:
   mail:
     host:  smtp.126.com
     username: fjieyou@126.com
-    password: xiaoyou0
+    password:
   boot:
     admin:
       notify:
@@ -22,7 +22,7 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
     health-check-url-path: /actuator/health
     instance-id: ${spring.application.name}:${server.port}
-    prefer-ip-address: true # ÏÔÊ¾ip
+    prefer-ip-address: true # ï¿½ï¿½Ê¾ip
     metadata-map:
       user.name: ${spring.security.user.name}
       user.password: ${spring.security.user.password}
